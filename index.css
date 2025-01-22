@@ -1,15 +1,13 @@
 .header {
   display: flex;
   justify-content: space-between;
-  border: 0px solid black;
   padding: 4px;
   height: 67px;
   align-items: center;
   position: sticky;
   top: 0;
-  overflow: hidden;
-  z-index: 0;
   background-color: white;
+  border-bottom: 0.1px solid silver;
 }
 
 .logo {
@@ -67,6 +65,7 @@
   margin-left: 16px;
   font-size: 21px;
   margin-bottom: -19px;
+  color: black;  
 }
 
 .res-info {
@@ -164,4 +163,8 @@
    justify-content: space-around;
    margin-bottom: 25px;
    margin-top: 15px
+}
+
+.links{
+  text-decoration: none;
 }
