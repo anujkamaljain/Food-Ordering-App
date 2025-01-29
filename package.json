@@ -19,12 +19,16 @@
   "homepage": "https://github.com/anujkamaljain/Food-Ordering-App#readme",
   "devDependencies": {
     "parcel": "^2.13.3",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "process": "^0.11.10"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^6.11.2"
+    "react-router-dom": "^6.11.2",
+    "tailwindcss": "^4.0.0"
   },
   "browserslist": [
     "last 8 version"
