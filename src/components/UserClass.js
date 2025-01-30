@@ -11,7 +11,7 @@ class UserClass extends React.Component {
 
   async componentDidMount() {
     const Data = await fetch(
-      "https://proxy.cors.sh/https://api.github.com/users/anujkamaljain",
+      "https://api.github.com/users/anujkamaljain",
     );
     const json = await Data.json();
     this.setState({
@@ -26,7 +26,7 @@ class UserClass extends React.Component {
         <div className="mt-2 flex w-full justify-center">
           <img
             src={
-              "https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png  "
+              avatar_url
             }
             alt="avatar"
             className="mb-0 h-[150px] w-[150px] rounded-full opacity-100"

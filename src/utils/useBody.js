@@ -16,7 +16,7 @@ const useRestaurants = () => {
       );
       const json = await response.json();
       const fetchedRestaurants =
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants || [];
       setRestaurants(fetchedRestaurants);
       setFilteredRestaurants(fetchedRestaurants);

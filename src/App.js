@@ -11,7 +11,6 @@ import RestaurantMenu from "./components/RestaurantMenu";
 // not adding key(not advisable) >>>>>>>>> index as key >>>>>>>>> unique id as key (best practice)
 
 const About = lazy(() => import("./components/About"));
-
 const AppLayout = () => {
   return (
     <div className="App">
