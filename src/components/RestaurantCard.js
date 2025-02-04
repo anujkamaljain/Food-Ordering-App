@@ -1,4 +1,5 @@
 import { CDN_URL } from "../utils/constants";
+import { STAR_LOGO } from "../utils/constants";
 const RestaurantCard = (props) => {
   const { resData } = props;
   const { name, cloudinaryImageId, avgRating, sla, cuisines, locality } = resData?.info;
@@ -15,7 +16,7 @@ const RestaurantCard = (props) => {
       <div className="mt-3 flex w-72 items-center p-1">
         <img
           className="h-7"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgM-To_Ll9cisQCt6SmigbXBduLhb29TRVGw&s"
+          src= {STAR_LOGO}
         ></img>
         <h4 className="text-black">{avgRating + " " + "•"}</h4>
         <ul>

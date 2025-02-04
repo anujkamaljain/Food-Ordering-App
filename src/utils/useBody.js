@@ -15,11 +15,10 @@ const useRestaurants = () => {
         BODY_URL
       );
       const json = await response.json();
-      const fetchedRestaurants =
-        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants || [];
+      const fetchedRestaurants = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
       setRestaurants(fetchedRestaurants);
       setFilteredRestaurants(fetchedRestaurants);
+      console.log(fetchedRestaurants);
     } catch (error) {
       console.error("Error fetching restaurants:", error);
     }
