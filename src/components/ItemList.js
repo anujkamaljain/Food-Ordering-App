@@ -1,15 +1,24 @@
+import { useDispatch } from "react-redux";
 import { CDN_URL, STAR_LOGO, STAR_LOGO2 } from "../utils/constants";
+import { addItem } from "../utils/cartSlice";
 
 const ItemList = ({items}) => {
+
+  const dispatch = useDispatch();
+
+   const handleAddItem = (item) => {
+      dispatch(addItem(item));
+   }
+
    return (
     <div>
         {
-            items.map((item) => {
+            items.map((item, index) => {
                 
               return (
                 <div
                   key={item?.card?.info?.id}
-                  className="my-4 h-56 flex justify-between border-b-1 border-gray-300 text-start"
+                  className="my-4 flex lg:h-60 justify-between border-b-1 border-gray-300 text-start sm:h-96 md:h-96"
                 >
                   <div className="mr-1.5">
                     {item?.card?.info?.itemAttribute?.vegClassifier === "VEG"
@@ -58,9 +67,12 @@ const ItemList = ({items}) => {
                     <p className="mt-2.5 mb-5 text-base font-normal text-gray-600">
                       {item?.card?.info?.description}
                     </p>
-                  </div>    
+                  </div>
                   <div>
-                    <button className="left-8/12 mt-28 absolute w-24 cursor-pointer rounded-lg bg-white p-2 font-bold text-green-400 shadow-2xl transition delay-100 duration-150 ease-in hover:bg-gray-200">
+                    <button
+                      className="absolute sm:left-6/12 md:left-6/12 lg:left-8/12 mt-28 w-24 cursor-pointer rounded-lg bg-white p-2 font-bold text-green-400 shadow-2xl transition delay-100 duration-150 ease-in hover:bg-gray-200"
+                      onClick={() => handleAddItem(item)}
+                    >
                       ADD
                     </button>
                   </div>

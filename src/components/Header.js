@@ -3,6 +3,7 @@ import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 export const Header = () => {
   const [btnName, setbtnName] = useState("Login");
@@ -10,6 +11,8 @@ export const Header = () => {
   const onlineStatus = useOnlineStatus();
 
   const {loggedInUser} = useContext(UserContext);
+
+  const cartItems = useSelector((store)=>store.cart.items);
 
 
   return (
@@ -27,22 +30,32 @@ export const Header = () => {
             <Link to="/about">About Us</Link>
           </li>
           <li className="transition-border m-1 cursor-pointer border-t-0 border-orange-400 duration-80 ease-out hover:border-t-1 hover:border-b-1 sm:mt-2 sm:text-gray-950 lg:text-2xl">
-            Cart
+            <Link to="/cart">Cart ({cartItems.length})</Link>
           </li>
           <li className="m-1 cursor-default sm:mt-2 sm:text-gray-950 lg:text-2xl">
             OnlineStatus: {onlineStatus ? "✅" : "🔴"}
           </li>
-          <li className="m-1 cursor-default sm:mt-2 sm:text-gray-950 lg:text-2xl">{loggedInUser}</li>
         </ul>
       </div>
-      <button
-        className="mt-1.2 mr-2 h-8 w-24 cursor-pointer rounded-sm border border-black text-base text-orange-400 transition duration-80 ease-in hover:-translate-y-0.5"
-        onClick={() => {
-          btnName === "Login" ? setbtnName("Logout") : setbtnName("Login");
-        }}
-      >
-        {btnName}
-      </button>
+      <div className="text-center">
+        <button
+          className="mt-1.2 h-8 w-24 cursor-pointer rounded-sm border border-black text-base text-orange-400 transition duration-80 ease-in hover:-translate-y-0.5"
+          onClick={() => {
+            btnName === "Login" ? setbtnName("Logout") : setbtnName("Login");
+          }}
+        >
+          {btnName}
+        </button>
+        <ul>
+          {btnName === "Logout" ? (
+            <li className="mt-1.5 cursor-default border-1 border-dashed text-sm font-bold text-orange-400">
+              {loggedInUser}
+            </li>
+          ) : (
+            ""
+          )}
+        </ul>
+      </div>
     </div>
   );
 };

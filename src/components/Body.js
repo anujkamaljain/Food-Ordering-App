@@ -42,7 +42,7 @@ const Body = () => {
         </div>
         <div className="flex items-center">
           <button
-            className="h-5 h-6 w-40 cursor-pointer border border-gray-400 text-orange-400 transition duration-80 ease-in hover:-translate-y-0.5"
+            className="h-6 w-40 cursor-pointer border border-gray-400 text-orange-400 transition duration-80 ease-in hover:-translate-y-0.5"
             onClick={handleFilterTopRated}
           >
             Top Rated Restaurant

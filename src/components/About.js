@@ -10,10 +10,8 @@ class About extends Component{
     render() {
          return (
            <div>
-             <div className="flex w-full justify-center mt-3 mb-3">
-               <h1 className="text-3xl transition-colors duration-200 ease-in hover:text-orange-400">
-                 About Us
-               </h1>
+             <div className="mt-3 mb-3 flex w-full justify-center transition-colors duration-200 ease-in hover:text-orange-400">
+               <h1 className="text-2xl font-extrabold">About Us</h1>
              </div>
              <UserClass name={"Anuj Kamal Jain"} location={"Jaipur"} />
            </div>
