@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 export const Header = () => {
   const [btnName, setbtnName] = useState("Login");
 
   const onlineStatus = useOnlineStatus();
+
+  const {loggedInUser} = useContext(UserContext);
+
 
   return (
     <div className="sticky top-0 z-1 flex h-20 items-center justify-between border-b-1 border-gray-300 bg-white p-1">
@@ -16,22 +20,19 @@ export const Header = () => {
       ></img>
       <div className="w-241">
         <ul className="flex justify-around">
-          <li className="transition-border m-1 cursor-pointer border-t-0 border-gray-300 border-orange-400 duration-80 ease-out hover:border-t-1 hover:border-b-1 sm:mt-2 sm:text-gray-950 lg:text-2xl">
-            <Link to="/">
-              Home
-            </Link>
+          <li className="transition-border m-1 cursor-pointer border-t-0 border-orange-400 duration-80 ease-out hover:border-t-1 hover:border-b-1 sm:mt-2 sm:text-gray-950 lg:text-2xl">
+            <Link to="/">Home</Link>
           </li>
-          <li className="transition-border m-1 cursor-pointer border-t-0 border-gray-300 border-orange-400 duration-80 ease-out hover:border-t-1 hover:border-b-1 sm:mt-2 sm:text-gray-950 lg:text-2xl">
-            <Link to="/about">
-              About Us
-            </Link>
+          <li className="transition-border m-1 cursor-pointer border-t-0 border-orange-400 duration-80 ease-out hover:border-t-1 hover:border-b-1 sm:mt-2 sm:text-gray-950 lg:text-2xl">
+            <Link to="/about">About Us</Link>
           </li>
-          <li className="transition-border m-1 cursor-pointer border-t-0 border-gray-300 border-orange-400 duration-80 ease-out hover:border-t-1 hover:border-b-1 sm:mt-2 sm:text-gray-950 lg:text-2xl">
+          <li className="transition-border m-1 cursor-pointer border-t-0 border-orange-400 duration-80 ease-out hover:border-t-1 hover:border-b-1 sm:mt-2 sm:text-gray-950 lg:text-2xl">
             Cart
           </li>
           <li className="m-1 cursor-default sm:mt-2 sm:text-gray-950 lg:text-2xl">
             OnlineStatus: {onlineStatus ? "✅" : "🔴"}
           </li>
+          <li className="m-1 cursor-default sm:mt-2 sm:text-gray-950 lg:text-2xl">{loggedInUser}</li>
         </ul>
       </div>
       <button
