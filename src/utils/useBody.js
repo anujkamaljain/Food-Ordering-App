@@ -18,7 +18,6 @@ const useRestaurants = () => {
       const fetchedRestaurants = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
       setRestaurants(fetchedRestaurants);
       setFilteredRestaurants(fetchedRestaurants);
-      console.log(fetchedRestaurants);
     } catch (error) {
       console.error("Error fetching restaurants:", error);
     }
