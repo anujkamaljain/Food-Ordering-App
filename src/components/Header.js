@@ -27,10 +27,13 @@ export const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="transition-border m-1 cursor-pointer border-t-0 border-orange-400 duration-80 ease-out hover:border-t-1 hover:border-b-1 sm:mt-2 sm:text-gray-950 lg:text-2xl">
+            <Link to="/cart">Cart ({cartItems.length})</Link>
+          </li>
+          <li className="transition-border m-1 cursor-pointer border-t-0 border-orange-400 duration-80 ease-out hover:border-t-1 hover:border-b-1 sm:mt-2 sm:text-gray-950 lg:text-2xl">
             <Link to="/about">About Us</Link>
           </li>
           <li className="transition-border m-1 cursor-pointer border-t-0 border-orange-400 duration-80 ease-out hover:border-t-1 hover:border-b-1 sm:mt-2 sm:text-gray-950 lg:text-2xl">
-            <Link to="/cart">Cart ({cartItems.length})</Link>
+            <Link to="/contact">Contact Us</Link>
           </li>
           <li className="m-1 cursor-default sm:mt-2 sm:text-gray-950 lg:text-2xl">
             OnlineStatus: {onlineStatus ? "✅" : "🔴"}
