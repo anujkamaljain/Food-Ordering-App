@@ -29,6 +29,7 @@ const Body = () => {
         <div className="flex w-2/5 items-center justify-center">
           <input
             placeholder="Search Your Favourite Food"
+            data-testid = "searchInput"
             className="mr-2.5 h-6 w-7/10 rounded border border-gray-300 px-1"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}

@@ -1,22 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1739083039239" clover="3.2.0">
-  <project timestamp="1739083039240" name="All files">
-    <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2" elements="15" coveredelements="9" complexity="0" loc="10" ncloc="10" packages="1" files="2" classes="2"/>
-    <file name="Contact.js" path="D:\Coding\NamasteReact\Swiggy\src\components\Contact.js">
-      <metrics statements="8" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="5" count="4" type="stmt"/>
-      <line num="6" count="4" type="stmt"/>
-      <line num="8" count="4" type="stmt"/>
-      <line num="9" count="0" type="stmt"/>
-      <line num="12" count="4" type="stmt"/>
-      <line num="18" count="0" type="stmt"/>
-      <line num="25" count="0" type="stmt"/>
-    </file>
-    <file name="sum.js" path="D:\Coding\NamasteReact\Swiggy\src\components\sum.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="1" type="stmt"/>
-    </file>
+<coverage generated="1739105281053" clover="3.2.0">
+  <project timestamp="1739105281053" name="All files">
+    <metrics statements="61" coveredstatements="57" conditionals="38" coveredconditionals="31" methods="26" coveredmethods="23" elements="125" coveredelements="111" complexity="0" loc="61" ncloc="61" packages="2" files="8" classes="8"/>
+    <package name="components">
+      <metrics statements="60" coveredstatements="56" conditionals="38" coveredconditionals="31" methods="26" coveredmethods="23"/>
+      <file name="Body.js" path="D:\Coding\NamasteReact\Swiggy\src\components\Body.js">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="20" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="20" count="20" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="55" count="78" type="stmt"/>
+      </file>
+      <file name="Cart.js" path="D:\Coding\NamasteReact\Swiggy\src\components\Cart.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+      </file>
+      <file name="Contact.js" path="D:\Coding\NamasteReact\Swiggy\src\components\Contact.js">
+        <metrics statements="8" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+      </file>
+      <file name="Header.js" path="D:\Coding\NamasteReact\Swiggy\src\components\Header.js">
+        <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="15" count="15" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="47" count="1" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="ItemList.js" path="D:\Coding\NamasteReact\Swiggy\src\components\ItemList.js">
+        <metrics statements="7" coveredstatements="7" conditionals="16" coveredconditionals="15" methods="4" coveredmethods="4"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="32" type="stmt"/>
+        <line num="75" count="2" type="stmt"/>
+      </file>
+      <file name="RestaurantCard.js" path="D:\Coding\NamasteReact\Swiggy\src\components\RestaurantCard.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="79" type="stmt"/>
+        <line num="5" count="79" type="stmt"/>
+        <line num="6" count="79" type="stmt"/>
+      </file>
+      <file name="RestaurantMenu.js" path="D:\Coding\NamasteReact\Swiggy\src\components\RestaurantMenu.js">
+        <metrics statements="15" coveredstatements="14" conditionals="12" coveredconditionals="8" methods="4" coveredmethods="4"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="24" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="26" type="stmt"/>
+        <line num="37" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="74" count="14" type="stmt"/>
+        <line num="79" count="1" type="cond" truecount="1" falsecount="1"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="appStore.js" path="D:\Coding\NamasteReact\Swiggy\src\utils\appStore.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
