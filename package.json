@@ -39,6 +39,7 @@
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^6.11.2",
+    "swiggy": "file:",
     "tailwindcss": "^4.0.0"
   },
   "browserslist": [
