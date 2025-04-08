@@ -22,8 +22,10 @@ Footer
 
 //Passing Props for dynamic data in cards
 
-Two types of import export
-1. default import/export - used to export a single Component and import syntax - import resList from ../../..
-2. named export/import - used to export multiple Component and import syntax - import {resList} from ../../..
+# How to Run this website on your local machine
+
+Clone this repo into your machine and navigate to the folder of this project and run npm run start on your terminal.
+now go on your browser and search for localhost:1234 you will see the project.
+
 
 
