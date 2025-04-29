@@ -1,6 +1,6 @@
 # 🍽️ Food Ordering App
 
-Link to see the website - https://vercel.com/anujkamaljains-projects/food-ordering-app
+Link to see the website - https://food-ordering-app-xi-two.vercel.app/
 
 A responsive, single-page food ordering application built with modern web technologies. This project showcases dynamic rendering of restaurant data, search functionality, and modular UI components.
 
