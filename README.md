@@ -1,4 +1,4 @@
-![Screenshot 2025-04-30 040023](https://github.com/user-attachments/assets/76feb96e-1389-4d2c-9fbe-7a03517badff)# 🍽️ Food Ordering App
+🍽️ Food Ordering App
 
 Link to see the website - https://food-ordering-app-xi-two.vercel.app/
 
