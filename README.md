@@ -1,4 +1,4 @@
-# 🍽️ Food Ordering App
+![Screenshot 2025-04-30 040023](https://github.com/user-attachments/assets/76feb96e-1389-4d2c-9fbe-7a03517badff)# 🍽️ Food Ordering App
 
 Link to see the website - https://food-ordering-app-xi-two.vercel.app/
 
@@ -30,6 +30,20 @@ Food-Ordering-App/
 ├── package.json
 └── README.md
 ```
+
+![Screenshot 2025-04-30 035938](https://github.com/user-attachments/assets/7c712950-5aa5-481f-995e-9b5376286c59)
+
+![Screenshot 2025-04-30 035952](https://github.com/user-attachments/assets/7a8c0c3a-aacb-4e40-b9b5-4e1c30d903f9)
+
+![Screenshot 2025-04-30 040009](https://github.com/user-attachments/assets/57242147-b8c9-41c2-af7e-5669fb72eeb5)
+
+![Screenshot 2025-04-30 040023](https://github.com/user-attachments/assets/5ae50980-93cc-4a33-8ef5-c8302202671b)
+
+![Screenshot 2025-04-30 040042](https://github.com/user-attachments/assets/106084b5-5163-4a74-afc3-879231b2c480)
+
+![Screenshot 2025-04-30 040055](https://github.com/user-attachments/assets/397e1006-dc54-4d63-a207-15248cc02bd6)
+
+
 
 ## 🚀 Getting Started
 
