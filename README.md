@@ -1,5 +1,12 @@
 🍽️ Food Ordering App
 
+**NOTE**
+Download the Cors bypass extension and enable it on your chrome browser before starting the project.
+
+link for CORS extension -  https://chromewebstore.google.com/detail/lhobafahddgcelffkeicbaginigeejlf?utm_source=item-share-cp
+
+After enabling the extension visit the website from the link given below.
+
 Link to see the website - https://food-ordering-app-xi-two.vercel.app/
 
 A responsive, single-page food ordering application built with modern web technologies. This project showcases dynamic rendering of restaurant data, search functionality, and modular UI components.
@@ -68,7 +75,12 @@ Food-Ordering-App/
    ```
 
 
-3. **Start the development server:**
+3. **Download the Cors bypass extension and enable it on your chrome browser before starting the project**
+
+link for extension - https://chromewebstore.google.com/detail/lhobafahddgcelffkeicbaginigeejlf?utm_source=item-share-cp
+
+4. **Start the development server:**
+
 
    ```bash
    npm start
