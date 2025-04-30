@@ -1,4 +1,4 @@
-🍽️ Food Ordering App
+#🍽️ Food Ordering App
 
 A responsive, single-page food ordering application built with modern web technologies. This project showcases dynamic rendering of restaurant data, search functionality, and modular UI components.
 
