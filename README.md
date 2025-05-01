@@ -4,7 +4,7 @@ A responsive, single-page food ordering application built with modern web techno
 
 ## See Website
 
-**NOTE**
+**NOTE :**
 Download the Cors bypass extension and enable it on your chrome browser before starting the project.
 
 link for CORS extension -  https://chromewebstore.google.com/detail/lhobafahddgcelffkeicbaginigeejlf?utm_source=item-share-cp
